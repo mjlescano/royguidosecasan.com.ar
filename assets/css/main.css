@@ -638,19 +638,23 @@
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #26aaae;
 		border: 0;
-		border-radius: 3.5em;
-		color: #ffffff;
+		border-radius: .2em;
+		color: #fff;
 		cursor: pointer;
 		display: inline-block;
-		height: 3.5em;
-		line-height: 3.5em;
+		height: 2.5em;
+		line-height: 2.5em;
 		outline: 0;
 		padding: 0 2em 0 2em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
+	}
+
+	a.button.button {
+		color: #fff !important;
 	}
 
 		input[type="button"].down,
@@ -695,7 +699,7 @@
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #1e8482;
 		}
 
 		input[type="button"]:active,
@@ -703,7 +707,7 @@
 		input[type="reset"]:active,
 		.button:active,
 		button:active {
-			background-color: #88bc82;
+			background-color: #1e8482;
 		}
 
 		input[type="button"].style2,
@@ -1885,7 +1889,7 @@
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background: #f7f3e7;
 			}
 
 		.main.dark {
