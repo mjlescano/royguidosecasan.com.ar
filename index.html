@@ -73,12 +73,16 @@
 						<p>Por favor avisanos si vas a venir mandandonos escribiendonos acá.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
-							<div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
-							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-							<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+						<form method="post" action="https://micro-form-api.herokuapp.com/submit">
+							<input type="hidden" value="some-id" />
+							<div class="field half first"><input type="text" name="name" placeholder="Nombre" required /></div>
+							<div class="field half"><input type="email" name="email" placeholder="Email" required /></div>
+							<div class="field"><textarea name="message" placeholder="Mensaje" rows="6"></textarea></div>
+							<div class="field">
+								<div style="display:inline-block" class="g-recaptcha" data-sitekey="6LfptDMUAAAAADGD1qr2e6fFguhxfflUSneKSSEq"></div>
+							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="Enviar" /></li>
 							</ul>
 						</form>
 					</div>
@@ -94,6 +98,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src='https://www.google.com/recaptcha/api.js' async></script>
 	</body>
 </html>
